@@ -1,0 +1,18 @@
+<label for="bunga">Pilih Jenis Bunga:</label>
+<select id="bunga" onchange="tampilkanBunga()">
+  <option value="Rose">Rose</option>
+  <option value="Lily">Lily</option>
+  <option value="Tulip">Tulip</option>
+  <option value="Orchid">Orchid</option>
+</select>
+
+<p>Bunga yang dipilih: <output id="hasil">Rose</output></p>
+
+<script>
+  function tampilkanBunga() {
+    let bungaTerpilih = document.getElementById("bunga").value;
+    document.getElementById("hasil").textContent = bungaTerpilih;
+  }
+</script>
+
+

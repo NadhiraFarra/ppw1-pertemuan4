@@ -1,0 +1,37 @@
+
+<html>
+<head>
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+    <h2>Form Pendaftaran Anggota Baru</h2>
+    <img src="d:\logo.ugm.jpeg" alt="Gambar Form" width="200">
+    <form action="/submit_form.php" method="post" enctype="multipart/form-data">
+        <label for="fname">Nama Depan:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Masukkan nama depan" required autofocus><br><br>
+        
+        <label for="lname">Nama Belakang:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Masukkan nama belakang" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="@xxx.com" required><br><br>
+        
+        <label for="phone">Nomor Telepon:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+        
+        <label for="gender">Jenis Kelamin:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="">Pilih</option>
+            <option value="male">Laki-laki</option>
+            <option value="female">Perempuan</option>
+        </select><br><br>
+        
+        <label for="dob">Tanggal Lahir:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="photo">Upload Foto:</label><br>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br><br>  
+        <input type="submit" value="Daftar">
+    </form>
+</body>
+</html>
